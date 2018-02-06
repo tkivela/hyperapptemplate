@@ -1,0 +1,42 @@
+{
+  "name": "hyperapptemplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "hyperapp": "^1.0.2"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html --out-dir build",
+    "test": "npm-run-all -s --silent lint unittest e2etest",
+    "build": "cross-env NODE_ENV=production parcel build index.html --public-url /",
+    "lint": "npm-run-all -s prettier standard",
+    "standard": "standard --verbose \"src/**/*.js\" \"cypress/**/*.js\" | snazzy",
+    "prettier": "prettier-standard 'src/**/*.js' 'cypress/**/*.js'",
+    "unittest": "jest --no-cache",
+    "e2etest": "npm-run-all -p --race --silent start cy:run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --config videoRecording=false"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-preset-react-app": "^3.1.0",
+    "babel-runtime": "^6.23.0",
+    "cross-env": "^5.1.1",
+    "cypress": "^1.4.2",
+    "hyperapp-redux-devtools": "^1.1.4",
+    "hyperapp-render": "^1.0.0",
+    "jest": "^22.1.4",
+    "npm-run-all": "^4.1.2",
+    "parcel-bundler": "^1.5.1",
+    "prettier-standard": "^8.0.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": [ "jest" ],
+    "globals": [
+      "h","cy"
+    ]
+  }
+}

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "hyperapp": "^1.0.2"
+    "hyperapp": "^1.1.0"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel index.html --out-dir build",
@@ -25,7 +25,7 @@
     "cypress": "^1.4.2",
     "hyperapp-redux-devtools": "^1.1.4",
     "hyperapp-render": "^1.0.0",
-    "jest": "^22.1.4",
+    "jest": "^22.2.1",
     "npm-run-all": "^4.1.2",
     "parcel-bundler": "^1.5.1",
     "prettier-standard": "^8.0.0",
@@ -34,9 +34,12 @@
   },
   "standard": {
     "parser": "babel-eslint",
-    "env": [ "jest" ],
+    "env": [
+      "jest"
+    ],
     "globals": [
-      "h","cy"
+      "h",
+      "cy"
     ]
   }
 }

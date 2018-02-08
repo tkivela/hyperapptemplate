@@ -3058,9 +3058,9 @@ hyperapp-render@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hyperapp-render/-/hyperapp-render-1.0.0.tgz#2f295751d512e0ff4f2a6ea2ab2657f561df6720"
 
-hyperapp@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.1.0.tgz#d6892f16cc4c52698cf44f8a11f2044741899c9d"
+hyperapp@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.1.1.tgz#1e80f0b2b4180defd389f815dfcbd863a9143a97"
 
 iconv-lite@0.4.19, iconv-lite@^0.4.17:
   version "0.4.19"

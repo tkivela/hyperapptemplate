@@ -19,15 +19,14 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "babel-preset-react-app": "^3.1.0",
-    "babel-runtime": "^6.23.0",
+    "babel-preset-react-app": "^3.1.1",
     "cross-env": "^5.1.1",
     "cypress": "^1.4.2",
     "hyperapp-redux-devtools": "^1.1.4",
     "hyperapp-render": "^1.1.0",
     "jest": "^22.2.2",
     "npm-run-all": "^4.1.2",
-    "parcel-bundler": "^1.5.1",
+    "parcel-bundler": "^1.6.0",
     "prettier-standard": "^8.0.0",
     "snazzy": "^7.0.0",
     "standard": "^10.0.3"

@@ -8,7 +8,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel index.html --out-dir build",
     "test": "npm-run-all -s --silent lint unittest e2etest",
-    "build": "cross-env NODE_ENV=production parcel build index.html --public-url /",
+    "build": "npm-run-all test createbuild",
+    "createbuild": "cross-env NODE_ENV=production parcel build index.html --public-url /",
     "lint": "npm-run-all -s prettier standard",
     "standard": "standard --verbose \"src/**/*.js\" \"cypress/**/*.js\" | snazzy",
     "prettier": "prettier-standard 'src/**/*.js' 'cypress/**/*.js'",

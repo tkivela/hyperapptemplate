@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import deltaCount from './deltaCount'
 
 test('Incrementing', () => {

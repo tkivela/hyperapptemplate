@@ -1,5 +1,4 @@
-/* eslint-env jest */
-import { app, h } from 'hyperapp' // eslint-disable-line
+import { app } from 'hyperapp'
 import { render } from 'hyperapp-render'
 
 import actions from './actions'

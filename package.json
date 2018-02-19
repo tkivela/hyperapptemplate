@@ -20,7 +20,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "babel-preset-react-app": "^3.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "cross-env": "^5.1.1",
     "cypress": "^1.4.2",
     "hyperapp-redux-devtools": "^1.1.4",
@@ -38,7 +39,6 @@
       "jest"
     ],
     "globals": [
-      "h",
       "cy"
     ]
   }

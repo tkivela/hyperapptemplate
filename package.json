@@ -19,18 +19,18 @@
     "cy:run": "cypress run --config videoRecording=false"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^8.2.2",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "cross-env": "^5.1.1",
-    "cypress": "^2.0.2",
-    "hyperapp-redux-devtools": "^1.1.4",
+    "cypress": "^2.1.0",
+    "hyperapp-redux-devtools": "^1.1.6",
     "hyperapp-render": "^1.1.0",
-    "jest": "^22.2.2",
+    "jest": "^22.4.2",
     "npm-run-all": "^4.1.2",
     "parcel-bundler": "^1.6.2",
     "prettier-standard": "^8.0.0",
-    "snazzy": "^7.0.0",
+    "snazzy": "^7.1.1",
     "standard": "^11.0.0"
   },
   "standard": {

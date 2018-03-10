@@ -6,10 +6,10 @@
     "hyperapp": "^1.1.2"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development parcel index.html --out-dir build",
+    "start": "cross-env NODE_ENV=development parcel ./src/index.html --out-dir build",
     "test": "npm-run-all -s --silent lint unittest e2etest",
     "build": "npm-run-all test createbuild",
-    "createbuild": "cross-env NODE_ENV=production parcel build index.html --public-url /",
+    "createbuild": "cross-env NODE_ENV=production parcel build ./src/index.html --public-url /",
     "lint": "npm-run-all -s prettier standard",
     "standard": "standard --verbose \"src/**/*.js\" \"cypress/**/*.js\" | snazzy",
     "prettier": "prettier-standard 'src/**/*.js' 'cypress/**/*.js'",
@@ -22,7 +22,7 @@
     "babel-eslint": "^8.2.2",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
-    "cross-env": "^5.1.1",
+    "cross-env": "^5.1.4",
     "cypress": "^2.1.0",
     "hyperapp-redux-devtools": "^1.1.6",
     "hyperapp-render": "^1.1.0",

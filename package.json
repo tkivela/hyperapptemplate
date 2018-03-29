@@ -14,7 +14,7 @@
     "standard": "standard --verbose \"src/**/*.js\" \"cypress/**/*.js\" | snazzy",
     "prettier": "prettier-standard 'src/**/*.js' 'cypress/**/*.js'",
     "unittest": "jest --no-cache",
-    "e2etest": "npm-run-all -p --race --silent start cy:run",
+    "e2etest": "start-server-and-test start http://localhost:1234 cy:run",
     "cy:open": "cypress open",
     "cy:run": "cypress run --config videoRecording=false"
   },
@@ -31,7 +31,8 @@
     "parcel-bundler": "^1.7.0",
     "prettier-standard": "^8.0.0",
     "snazzy": "^7.1.1",
-    "standard": "^11.0.1"
+    "standard": "^11.0.1",
+    "start-server-and-test": "^1.1.0"
   },
   "standard": {
     "parser": "babel-eslint",

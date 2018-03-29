@@ -72,8 +72,6 @@ yarn test
 
 Running formats and lints code (Prettier & Standard) and then runs unit tests (Jest) and end to end tests (Cypress). If there are any errors in the end to end tests the script will leave a screenshot of the browser window which reproduces the error to `cypress/screenshot` folder. Screenshot folder is automatically deleted with each test run. If you want to create a video of the e2e testing run automatically to `cypress/videos` folder, just change `videoRecording=false` to `videoRecording=true` from package.json.
 
-In Linux environments test will end with `error Command failed with signal "SIGTERM"` even though all tests passed. This is a known error which is caused by terminating the webserver process after tests.
-
 
 If you want to test steps in the Cypress UI first start the dev server (yarn start) and then run
 ```
